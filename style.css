@@ -215,6 +215,7 @@ section { padding: 6rem 0; }
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--text);
+  margin-bottom: 0.25rem;
 }
 
 .form-group input,
@@ -238,7 +239,7 @@ section { padding: 6rem 0; }
 
 .form-group textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 140px;
 }
 
 .contact-form .btn-primary {
