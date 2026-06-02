@@ -87,60 +87,93 @@
     <div class="container">
       <p class="section-label">Gallery</p>
       <h2>Recent work</h2>
+
+      <!-- Gallery tabs -->
+      <div class="gallery-tabs">
+        <button class="gallery-tab active" onclick="switchTab(this, 'staging')">Property Staging</button>
+        <button class="gallery-tab" onclick="switchTab(this, 'people')">People &amp; Places</button>
+        <button class="gallery-tab" onclick="switchTab(this, 'wonder')">Wonder</button>
+      </div>
     </div>
 
-    <!-- ============================================================ -->
-    <!--  ADD GALLERY PHOTOS HERE                                     -->
-    <!--                                                              -->
-    <!--  To add a new photo:                                         -->
-    <!--  1. Upload the image file to the "images" folder on GitHub   -->
-    <!--  2. Copy one of the <div class="gallery-item"> blocks below  -->
-    <!--  3. Change the filename in src="" and update the alt text    -->
-    <!-- ============================================================ -->
-    <div class="gallery-grid">
-
-      <div class="gallery-item">
-        <img src="images/bedroom1.jpeg" alt="Staged bedroom with natural light and floral curtains" loading="lazy" onclick="openLightbox(this)" />
+    <!-- ===== PROPERTY STAGING ===== -->
+    <div id="tab-staging" class="gallery-panel active">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/bedroom1.jpeg" alt="Staged bedroom with natural light and floral curtains" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/bathroom1.jpeg" alt="Clean, well-lit bathroom with marble shelf" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/FullSizeRender.jpeg" alt="Characterful bedroom with bookshelf and blue bedding" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/livingroom3.jpg" alt="Living room with balcony view and natural light" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/kitchen2.jpeg" alt="Clean kitchen with under-cabinet lighting" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/kitchen3.jpg" alt="Bright kitchen with balcony access and plant" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/blueroom1.jpeg" alt="Cosy double bedroom with blue bedding and bookshelf" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/blueroom4.jpeg" alt="Double bedroom with blue curtains and warm lamp" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/bunkbeds2.jpeg" alt="Bunk bed room with warm lamp light" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/roominromania.jpeg" alt="Bright bedroom in Romania with plants and warm tones" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <!-- ADD MORE PROPERTY STAGING PHOTOS BELOW -->
       </div>
-      <div class="gallery-item">
-        <img src="images/bathroom1.jpeg" alt="Clean, well-lit bathroom with marble shelf" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-      <div class="gallery-item">
-        <img src="images/FullSizeRender.jpeg" alt="Characterful bedroom with bookshelf and blue bedding" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-      <div class="gallery-item">
-        <img src="images/livingroom3.jpg" alt="Living room with balcony view and natural light" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-      <div class="gallery-item">
-        <img src="images/kitchen2.jpeg" alt="Clean kitchen with under-cabinet lighting" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-      <div class="gallery-item">
-        <img src="images/kitchen3.jpg" alt="Bright kitchen with balcony access and plant" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-      <div class="gallery-item">
-        <img src="images/blueroom1.jpeg" alt="Cosy double bedroom with blue bedding and bookshelf" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-      <div class="gallery-item">
-        <img src="images/bunkbeds2.jpeg" alt="Bunk bed room with warm lamp light" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-
-
-      <div class="gallery-item">
-        <img src="images/blueroom4.jpeg" alt="Double bedroom with blue curtains and warm lamp" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-      <div class="gallery-item">
-        <img src="images/galleryglass.jpg" alt="Art gallery interior — fisheye lens photography" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-      <div class="gallery-item">
-        <img src="images/staircaseglass.jpg" alt="Multi-storey atrium with spiral staircase — fisheye lens" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-      <div class="gallery-item">
-        <img src="images/roominromania.jpeg" alt="Bright bedroom in Romania with plants and warm tones" loading="lazy" onclick="openLightbox(this)" />
-      </div>
-
-      <!-- ADD MORE PHOTOS BELOW THIS LINE — copy a block from above -->
-
     </div>
+
+    <!-- ===== PEOPLE & PLACES ===== -->
+    <div id="tab-people" class="gallery-panel">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/parasols.jpg" alt="Colourful street performers in ballgowns at a city parade" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/pedalloes.jpg" alt="Swan pedal boats on a lake beside a grand building" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/beachdog.jpeg" alt="Dog mid-sprint on the beach" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/stormygothic.jpg" alt="Gothic Victorian building under a dramatic stormy sky" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/rabbits.jpeg" alt="Two rabbits nestled together in a wicker basket" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <!-- ADD MORE PEOPLE & PLACES PHOTOS BELOW -->
+      </div>
+    </div>
+
+    <!-- ===== WONDER ===== -->
+    <div id="tab-wonder" class="gallery-panel">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/galleryglass.jpg" alt="Art gallery interior — fisheye lens" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/staircaseglass.jpg" alt="Multi-storey atrium with spiral staircase — fisheye lens" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/stormyskygothic.jpg" alt="Gothic building interior — fisheye lens" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/squirrel.jpg" alt="Curious squirrel peering through iron railings" loading="lazy" onclick="openLightbox(this)" />
+        </div>
+        <!-- ADD MORE WONDER PHOTOS BELOW -->
+      </div>
+    </div>
+
   </section>
 
   <!-- Lightbox overlay -->
@@ -149,7 +182,7 @@
     <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()" />
   </div>
 
-  <!-- ===================== TESTIMONIALS ===================== -->
+    <!-- ===================== TESTIMONIALS ===================== -->
   <section id="testimonials">
     <div class="container">
       <p class="section-label">Testimonials</p>
@@ -245,7 +278,16 @@
       document.getElementById('nav-links').classList.toggle('open');
     });
 
-    // Lightbox
+    
+  // Gallery tab switching
+  function switchTab(btn, tabId) {
+    document.querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.gallery-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + tabId).classList.add('active');
+  }
+
+  // Lightbox
     function openLightbox(img) {
       const lb = document.getElementById('lightbox');
       document.getElementById('lightbox-img').src = img.src;
