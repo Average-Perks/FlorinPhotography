@@ -272,6 +272,38 @@ section { padding: 6rem 0; }
 .service-card h3 { color: var(--text); margin-bottom: 0.5rem; }
 .service-card p  { font-size: 0.92rem; line-height: 1.65; }
 
+
+/* ---- GALLERY TABS ---- */
+.gallery-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem 0 0;
+  flex-wrap: wrap;
+}
+.gallery-tab {
+  background: none;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  padding: 0.55rem 1.4rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+.gallery-tab:hover,
+.gallery-tab.active {
+  background: var(--blue);
+  color: #fff;
+}
+.gallery-panel {
+  display: none;
+}
+.gallery-panel.active {
+  display: block;
+}
+
 /* ---- GALLERY ---- */
 #gallery { background: var(--bg); }
 #gallery > .container { margin-bottom: 2.5rem; }
